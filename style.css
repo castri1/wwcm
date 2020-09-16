@@ -4,14 +4,14 @@ p {
 
 
 body {
-    background-color: #fac769;
+    background-color: green;
     color:black;
     padding: 20px 20px 20px 20px;
     border: solid black;
 }
 
 header {
- background-color: red;
+ background-color: #365c9a;
  color:whitesmoke;
  border: solid black;
  padding: 10px;
