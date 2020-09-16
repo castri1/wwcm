@@ -1,0 +1,105 @@
+p {
+    color: black; 
+}
+
+
+body {
+    background-color: #fac769;
+    color:black;
+    padding: 20px 20px 20px 20px;
+    border: solid black;
+}
+
+header {
+ background-color: #365c9a;
+ color:whitesmoke;
+ border: solid black;
+ padding: 10px;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 2px;
+}
+
+ul li a{
+    color:whitesmoke;
+}
+
+html {
+    font-size: 15px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+    font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+  }
+
+
+.my-section {
+    border: black;
+    padding: 100px 100px;
+    margin: 100px 100px;
+}
+
+.featured {
+  background-color: blanchedalmond;
+  margin: 0%;
+  border: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+#galeria img{
+    float:left;
+    width: 200px;
+    height: 150px;
+}
+
+#song {
+    clear:both;
+}
+
+
+.body img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.navbar {
+    height: 90px;
+    width: 90%;
+    padding: 50px 70px 200px 50px;
+    background-color: rgb(53, 62, 192);
+    color: white;
+  }
+  
+  .navbar--brand-img {
+    width: 150px;
+    float: left;
+  }
+  
+  .navbar--brand-name {
+    text-align: center;
+    height: 50%;
+    color: white;
+  }
+  
+  .navbar--menu {
+    float: right;
+    height: 100%;
+    text-align: right;
+  }
+  
+  .navbar--menu-item {
+    list-style: none;
+    display: inline;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  
+  .navbar--menu-item:hover {
+    color: rgb(195, 64, 92);
+    border-bottom: 2px solid white;
+  }
