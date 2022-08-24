@@ -36,11 +36,16 @@ a {
 
 #header a:visited, #header a:link {
     color: white;
-} 
+}
+
 
 #header a:hover {
     color: #ffb742;
 }
+
+/*#button:active {
+    transform: scale(0.94);
+}*/
 
 button {
     font-weight: 800;
@@ -60,6 +65,7 @@ button {
 /* End */
 
 /* Main */
+
 #contact {
     display: flex;
     justify-content:center;
@@ -73,8 +79,70 @@ button {
     font-family: 'Poppins';
     font-size: 20px;
     border-radius: 50px;
-    padding-top: 10px;
-    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-top: 10px;
+    padding-left: 20px;*/
+}
+
+#textoSmile{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#cajonChiste{
+    width:30%;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#chiste{
+    display: flex;
+    justify-content: center;
+    color : black;
+    font-size: 20px;
+    font-family:'Poppins'; 
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+#respuesta{
+    display: flex;
+    justify-content: center;
+    color : black;
+    font-size: 20px;
+    font-family:'Poppins'; 
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+#oneMore{
+    font-weight: 800;
+    color: black;
+    width: 80px;
+    height: 40px;
+    left: 1271px;
+    top: 23.06px;
+
+    background: #FFB742;
+    border: 2px solid #FFB742;
+    border-radius: 50px;
+    border-style: none;
+    margin: 0 auto;
+    cursor: pointer;
+    
+}
+
+.botonChiste{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+
 }
 
 #casillas{
@@ -240,4 +308,10 @@ button {
 .logo-send{
     position: relative;
     right: 45px;
+}
+
+.chance-mode-body {
+    background-color: white;
+    font-family: 'Poppins';
+    color: black;
 }
