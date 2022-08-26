@@ -34,7 +34,7 @@ a {
     text-decoration: none;
 }
 
-#header a:visited, #header a:link {
+ a:visited, #header a:link {
     color: white;
 }
 
@@ -95,10 +95,10 @@ button {
 
 #cajonChiste{
     width:30%;
-    height: 250px;
     background-color: white;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 12px auto;
+    background-color: #efefef;
 }
 
 #chiste{
@@ -109,6 +109,7 @@ button {
     font-family:'Poppins'; 
     padding: 10px;
     word-wrap: break-word;
+    
 }
 
 #respuesta{
@@ -119,6 +120,7 @@ button {
     font-family:'Poppins'; 
     padding: 10px;
     word-wrap: break-word;
+    
 }
 
 #oneMore{
@@ -314,4 +316,22 @@ button {
     background-color: white;
     font-family: 'Poppins';
     color: black;
+}
+
+/* lightMode */
+
+.change-mode-body {
+    background-color: white;
+    font-family: 'Poppins';
+    color: black;
+}
+
+.change-mode-size {
+    font-size: 16px;
+    color: white;
+}
+
+a.change-mode-a {
+    text-decoration: none;
+    color: black ;
 }

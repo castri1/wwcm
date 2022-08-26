@@ -35,7 +35,7 @@ a {
     text-decoration: none;
 }
 
-#header a:visited, #header a:link {
+a:visited, #header a:link {
     color: white;
 } 
 
@@ -57,7 +57,7 @@ a {
     border-style: none;
     margin: 15px 5px;
 }
-/*End Header*/
+/*end Header*/
 
 #container{
     display: flex;
@@ -203,6 +203,33 @@ a {
 .logo-send{
     position: relative;
     right: 45px;
+}
+
+/* lightMode */
+
+.change-mode-body {
+    background-color: white;
+    font-family: 'Poppins';
+    color: black;
+}
+
+.change-mode-size {
+    font-size: 16px;
+    color: white;
+}
+
+a.change-mode-a {
+    text-decoration: none;
+    color: black;
+}
+
+.change-mode-small-box {
+    width: 315px;
+    height: 330px;
+    border-radius: 8px;
+    background-color:#212529;
+    color: white;
+    margin: 10px;
 }
 
 
