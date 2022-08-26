@@ -2,9 +2,9 @@
 
 const botonchange = document.getElementById("button");
 
-botonchange.addEventListener("click", cambio);
+botonchange.addEventListener("click", change);
 
-function cambio() {
+function change() {
 
     let body = document.querySelector('.body')
     body.classList.toggle('change-mode-body')
