@@ -30,12 +30,12 @@ body {
     list-style-type: none;
     margin: 10px;
 }
- 
+
 a {
     text-decoration: none;
 }
 
-a:visited, #header a:link {
+a, a:visited, #header a:link {
     color: white;
 } 
 
