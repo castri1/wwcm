@@ -34,7 +34,7 @@ a {
     text-decoration: none;
 }
 
-a, a:visited, #header a:link {
+a.white, a:visited {
     color: white;
 }
 

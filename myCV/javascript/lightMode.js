@@ -16,6 +16,7 @@ function change() {
 
     let letrasnav = document.querySelectorAll('a')
     letrasnav.forEach(element => {
+        element.classList.toggle('white')
         element.classList.toggle('change-mode-a')
     }); 
      
