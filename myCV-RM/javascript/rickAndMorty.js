@@ -1,6 +1,12 @@
+let info = ''
+
 function getCards(callback, status, gender) {
+    getCardsWithURL(callback, "https://rickandmortyapi.com/api/character/?status="+status+"&gender="+gender)
+}
+
+function getCardsWithURL(callback, url) {
     
-    const results = fetch("https://rickandmortyapi.com/api/character/?status="+status+"&gender="+gender);
+    const results = fetch(url);
 
     results.then(response => response.json())
     .then(cards => {
@@ -9,6 +15,7 @@ function getCards(callback, status, gender) {
 }
 
 function putCards(cards) {
+    info = cards.info
     cards.results.forEach(personaje => {
 
         const article = document.createRange().createContextualFragment(/*html*/`
@@ -30,10 +37,8 @@ function putCards(cards) {
 
     });
 
-    document.getElementById("h2").innerHTML=""
 }
 
-// getCards(putCards, "","");
 
 function getCardsAll(callback) {
     document.querySelector(".targets").innerHTML = '';
@@ -58,5 +63,19 @@ function getCardsAlive(callback) {
 function getCardsDead(callback) {
     document.querySelector(".targets").innerHTML = '';
     getCards(putCards, "Dead","");
+}
+
+function previous(callback) {
+    if ( info.prev != null ) {
+        document.querySelector(".targets").innerHTML = '';
+        getCardsWithURL(putCards,info.prev);
+    }
+}
+
+function next(callback) {
+    if ( info.next != null ) {
+        document.querySelector(".targets").innerHTML = '';
+        getCardsWithURL(putCards,info.next);
+    }
 }
 
