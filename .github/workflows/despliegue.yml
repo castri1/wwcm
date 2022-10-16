@@ -1,0 +1,20 @@
+name: Publicar mi sitio
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  desplegar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Publicar a GitHub Actions
+        uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+        with:
+          dir: ./myCV-RM
+          branch: gh-pages
+          token: ${{ secrets.ACCESS_TOKEN }}
